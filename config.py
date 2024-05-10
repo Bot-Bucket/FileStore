@@ -65,7 +65,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "ʙᴀᴋᴋᴀ ! ʏᴏᴜ ᴀʀᴇ ɴᴏᴛ ᴍʏ ꜱᴇɴᴘᴀɪ!!\n\n» ᴍʏ ᴏᴡɴᴇʀ : @bucket_bots"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(927273372)
+ADMINS.append(1250450587)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
