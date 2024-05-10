@@ -89,7 +89,7 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("⚡️ ᴀʙᴏᴜᴛ", callback_data = "about"),
-                    InlineKeyboardButton('🍁 sᴇʀɪᴇsғʟɪx', url='https://t.me/Team_Netflix/40')
+                    InlineKeyboardButton('🎁 ᴇᴀʀɴɪɴɢ ᴄʜᴀɴɴᴇʟ 🎁', url='https://t.me/Earning_Bucket')
                 ]
             ]
         )
@@ -121,6 +121,9 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 @Bot.on_message(filters.command('start') & filters.private)
 async def not_joined(client: Client, message: Message):
     buttons = [
+        [
+          InlineKeyboardButton(text="🎁 ɪɴsᴛᴀɴᴛ ᴜᴘɪ ᴄᴀsʜ ғʀᴇᴇ 🎁", url=f'https://telegram.dog/SignUp_WithdrawBot?start=NjAxMjkyMDY2NA==')  
+        ]
         [
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink2),
