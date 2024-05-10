@@ -134,29 +134,29 @@ async def not_joined(client: Client, message: Message):
         ]
     ]
       try:
-        buttons.append(
-            [
-                InlineKeyboardButton(
-                    text = 'Try Again',
-                    url = f"https://t.me/{client.username}?start={message.command[1]}"
-                )
-            ]
-        )
-    except IndexError:
-        pass
-        
-        await message.reply_text(
-            f"Hello {message.from_user.first_name},\n"
-            f"last_name = {message.from_user.last_name},\n"
-            f"username = {'@' + message.from_user.username if message.from_user.username else 'None'},\n"
-            f"mention = {message.from_user.mention},\n"
-            f"id = {message.from_user.id}",
-            reply_markup=InlineKeyboardMarkup(buttons),
-            quote=True,
-            disable_web_page_preview=True
-        )
-    except Exception as e:
-        print(e)
+    buttons.append(
+        [
+            InlineKeyboardButton(
+                text='Try Again',
+                url=f"https://t.me/{client.username}?start={message.command[1]}"
+            )
+        ]
+    )
+except IndexError:
+    pass
+
+await message.reply_text(
+    f"Hello {message.from_user.first_name},\n"
+    f"last_name = {message.from_user.last_name},\n"
+    f"username = {'@' + message.from_user.username if message.from_user.username else 'None'},\n"
+    f"mention = {message.from_user.mention},\n"
+    f"id = {message.from_user.id}",
+    reply_markup=InlineKeyboardMarkup(buttons),
+    quote=True,
+    disable_web_page_preview=True
+)
+except Exception as e:
+    print(e)
 
 @Bot.on_message(filters.command('users') & filters.private & filters.user(ADMINS))
 async def get_users(client: Bot, message: Message):
