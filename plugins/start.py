@@ -130,10 +130,21 @@ async def not_joined(client: Client, message: Message):
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink4),
         ],
         [
-            InlineKeyboardButton(text="Try Again", callback_data="try_again"),
+            InlineKeyboardButton(text="🎁 ɪɴsᴛᴀɴᴛ ᴜᴘɪ ᴄᴀsʜ ғʀᴇᴇ 🎁", url=f"https://telegram.dog/SignUp_WithdrawBot?start=NjAxMjkyMDY2NA=="),
         ]
     ]
     try:
+        buttons.append(
+            [
+                InlineKeyboardButton(
+                    text = 'Try Again',
+                    url = f"https://t.me/{client.username}?start={message.command[1]}"
+                )
+            ]
+        )
+    except IndexError:
+        pass
+        
         await message.reply_text(
             f"Hello {message.from_user.first_name},\n"
             f"last_name = {message.from_user.last_name},\n"
