@@ -122,9 +122,6 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-          InlineKeyboardButton(text="🎁 ɪɴsᴛᴀɴᴛ ᴜᴘɪ ᴄᴀsʜ ғʀᴇᴇ 🎁", url=f'https://telegram.dog/SignUp_WithdrawBot?start=NjAxMjkyMDY2NA==')  
-        ]
-        [
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
             InlineKeyboardButton(text="ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ •", url=client.invitelink2),
         ],
@@ -134,20 +131,7 @@ async def not_joined(client: Client, message: Message):
         ]
     ]
     try:
-        buttons.append(
-            [
-                InlineKeyboardButton(
-                    text = '• ɴᴏᴡ ᴄʟɪᴄᴋ ʜᴇʀᴇ •',
-                    url = f"https://t.me/{client.username}?start={message.command[1]}"
-                )
-            ]
-        )
-    except IndexError:
-        pass
-
-    await message.reply(
-        text = FORCE_MSG.format(
-                first = message.from_user.first_name,
+        buttomessage.from_user.first_name,
                 last = message.from_user.last_name,
                 username = None if not message.from_user.username else '@' + message.from_user.username,
                 mention = message.from_user.mention,
