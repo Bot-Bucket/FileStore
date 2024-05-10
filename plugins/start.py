@@ -133,7 +133,7 @@ async def not_joined(client: Client, message: Message):
             InlineKeyboardButton(text="🎁 ɪɴsᴛᴀɴᴛ ᴜᴘɪ ᴄᴀsʜ ғʀᴇᴇ 🎁", url=f"https://telegram.dog/SignUp_WithdrawBot?start=NjAxMjkyMDY2NA=="),
         ]
     ]
-        try:
+      try:
         buttons.append(
             [
                 InlineKeyboardButton(
