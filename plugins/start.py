@@ -122,7 +122,7 @@ REPLY_ERROR = """<code>Use this command as a replay to any telegram message with
 async def not_joined(client: Client, message: Message):
     buttons = [
         [
-            InlineKeyboardButton(text="🤖 ᴇᴀʀɴ 100$ ғʀᴇᴇ 🤖", url=f"https://t.me/tapswap_mirror_bot?start=r_6012920664"),
+            InlineKeyboardButton(text="🌟 ᴍᴇᴍᴇғɪ 🌟", url=f"https://t.me/memefi_coin_bot?start=r_c2d29331f7"),
         ],
         [
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink),
@@ -133,7 +133,7 @@ async def not_joined(client: Client, message: Message):
             InlineKeyboardButton(text="• ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ", url=client.invitelink4),
         ],
         [
-            InlineKeyboardButton(text="🐹 ʜᴀᴍsᴛᴇʀ ᴋᴏᴍʙᴀᴛ 🐹", url=f"https://t.me/hamster_kombat_bot?start=kentId6012920664"),
+            InlineKeyboardButton(text="💰 ɴᴇᴡ ᴍɪɴɪɴɢ ʙᴏᴛ 💰", url=f"https://t.me/yescoingame_bot?start=r_6012920664"),
         ]
     ]
     try:
